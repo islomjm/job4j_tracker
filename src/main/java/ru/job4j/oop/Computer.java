@@ -6,6 +6,7 @@ public class Computer {
     private int ssd;
     private String cpu;
     private String gpu;
+
     public void printInfo() {
         System.out.println("Много мониторов: " + multiMonitor);
         System.out.println("SSD: " + ssd + " GB");
@@ -15,6 +16,7 @@ public class Computer {
 
     public Computer() {
     }
+
     public Computer(boolean multiMonitor, int ssd, String cpu, String gpu) {
         this.multiMonitor = multiMonitor;
         this.ssd = ssd;
