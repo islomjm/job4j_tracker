@@ -7,6 +7,13 @@ public class Computer {
     private String cpu;
     private String gpu;
 
+    public Computer(boolean multiMonitor, int ssd, String cpu, String gpu) {
+        this.multiMonitor = multiMonitor;
+        this.ssd = ssd;
+        this.cpu = cpu;
+        this.gpu = gpu;
+    }
+
     public void printInfo() {
         System.out.println("Много мониторов: " + multiMonitor);
         System.out.println("SSD: " + ssd + " GB");
@@ -15,13 +22,6 @@ public class Computer {
     }
 
     public Computer() {
-    }
-
-    public Computer(boolean multiMonitor, int ssd, String cpu, String gpu) {
-        this.multiMonitor = multiMonitor;
-        this.ssd = ssd;
-        this.cpu = cpu;
-        this.gpu = gpu;
     }
 
     public static void main(String[] args) {
