@@ -20,22 +20,20 @@ public class Calculator {
     }
 
     public int sumAllOperation(int d) {
-        return sum(d) + multiply(d) + minus(d) + divide(d);
+        return d;
     }
 
     public static void main(String[] args) {
+        Calculator calculator = new Calculator();
         int result = sum(10);
         System.out.println(result);
-        Calculator calculator = new Calculator();
         int rsl = calculator.multiply(5);
         System.out.println(rsl);
-        int rsl2 = minus(2);
+        int rsl2 = Calculator.minus(2);
         System.out.println(rsl2);
-        Calculator calculator1 = new  Calculator();
-        int rsl3 = calculator1.divide(5);
+        int rsl3 = calculator.divide(5);
         System.out.println(rsl3);
-        Calculator calculator2 = new Calculator();
-        int rsl4 = calculator2.sumAllOperation(5);
+        int rsl4 = calculator.sumAllOperation(result + rsl + rsl2 + rsl3);
         System.out.println(rsl4);
     }
 }
