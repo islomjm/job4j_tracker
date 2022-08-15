@@ -20,7 +20,7 @@ public class Calculator {
     }
 
     public int sumAllOperation(int d) {
-        return d;
+        return sum(d) + multiply(d) + minus(d) + divide(d);
     }
 
     public static void main(String[] args) {
@@ -33,7 +33,7 @@ public class Calculator {
         System.out.println(rsl2);
         int rsl3 = calculator.divide(5);
         System.out.println(rsl3);
-        int rsl4 = calculator.sumAllOperation(result + rsl + rsl2 + rsl3);
+        int rsl4 = calculator.sumAllOperation(5);
         System.out.println(rsl4);
     }
 }
