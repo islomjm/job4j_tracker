@@ -42,4 +42,22 @@ class PointTest {
         double expected = 7.81;
         assertThat(result).isCloseTo(expected, offset(0.01));
     }
+
+    @Test
+    public void when000To222Then3dot46() {
+        Point one = new Point(0, 0, 0);
+        Point two = new Point(2, 2, 2);
+        double result = one.distance3d(two);
+        double expected = 3.46;
+        assertThat(result).isCloseTo(expected, offset(0.01));
+    }
+
+    @Test
+    public void when546To356Then2dot23() {
+        Point one = new Point(5, 4, 6);
+        Point two = new Point(3, 5, 6);
+        double result = one.distance3d(two);
+        double expected = 2.23;
+        assertThat(result).isCloseTo(expected, offset(0.01));
+    }
 }
