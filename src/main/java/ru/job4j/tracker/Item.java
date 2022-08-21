@@ -35,10 +35,6 @@ public class Item {
         this.name = name;
     }
 
-    public Item(LocalDateTime created) {
-        this.created = created;
-    }
-
     public LocalDateTime getCreated() {
         return created;
     }
